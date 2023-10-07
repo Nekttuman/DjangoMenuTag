@@ -1,0 +1,21 @@
+{% load menu_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UpTrader test case 1</title>
+    <link rel="stylesheet" type="text/css" href="{% static "styles.css" %}">
+</head>
+<body>
+<div class="menu">
+    <h1>main menu</h1>
+    {% draw_menu 'main' request %}
+</div>
+
+<div class="menu">
+    <h1> Table of Contents (другое меню)</h1>
+    {% draw_menu 'tableOfContents' request %}
+</div>
+</body>
+</html>
