@@ -53,3 +53,13 @@ Open localhost: http://127.0.0.1:8000/
  ```
 menu_items = MenuItem.objects.filter(menu_name=menu_name).prefetch_related('children')
 ```
+
+Выбран пункт меню "Услуги"
+![image](https://github.com/Nekttuman/DjangoMenuTag/assets/54391498/de30ba98-3c5a-452f-8c67-4d91bff06e5f)
+
+Выбран пункт меню "Модбильные приложения"
+![image](https://github.com/Nekttuman/DjangoMenuTag/assets/54391498/38e75c85-efd6-435a-a9e7-e5af2bc1596a)
+
+Выбран пункт меню "1.1 Definition of Concepts"
+![image](https://github.com/Nekttuman/DjangoMenuTag/assets/54391498/74957140-6ceb-408b-8a04-2db2572f3813)
+
