@@ -16,16 +16,13 @@ li {
 }
 
 
+/* hide all by default */
 ul ul {
     display: none;
 }
 
 
-li.active > ul{
-    display: block;
-}
-
-li.expand > ul{
+li.active > ul {
     display: block;
 }
 
@@ -34,3 +31,8 @@ li.active {
     background-color: antiquewhite;
     color: #fff;
 }
+
+li.expand > ul {
+    display: block;
+}
+
