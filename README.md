@@ -43,3 +43,13 @@ Open localhost: http://127.0.0.1:8000/
  ```
 
  При выполнении задания из библиотек следует использовать только Django и стандартную библиотеку Python.
+
+ # Описание решения
+
+ Меню хранятся в  модели Menu items. Добавление нового элемента в меню:
+ ![image](https://github.com/Nekttuman/DjangoMenuTag/assets/54391498/39d2f603-1272-4e8e-b477-bb40fb3ed972)
+
+ Поскольку запрос к Бд дожен быть единственным при отрисовке меню, в draw_menu, фала menu_tags.py используем:
+ ```
+menu_items = MenuItem.objects.filter(menu_name=menu_name).prefetch_related('children')
+```
